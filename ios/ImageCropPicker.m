@@ -543,7 +543,7 @@ RCT_EXPORT_METHOD(openCropper:(NSDictionary *)options
                                          return;
                                      }
                                  }
-
+                                 
                                  NSDictionary* exif = nil;
                                  if([[self.options objectForKey:@"includeExif"] boolValue]) {
                                      exif = [[CIImage imageWithData:imageData] properties];
